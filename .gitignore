@@ -1,0 +1,18 @@
+# XCode
+#build
+#distribution
+*.swp
+*.pbxuser
+xcuserdata
+*.xcuserstate
+#*.xccheckout
+
+
+# OSX
+.DS_Store
+
+# Temporary files
+*~
+\#*\#
+.#*
+

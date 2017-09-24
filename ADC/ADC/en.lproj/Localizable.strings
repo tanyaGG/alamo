@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  ADC
+
+  Created by TANYA GYGI on 9/23/17.
+  Copyright © 2017 TANYA GYGI. All rights reserved.
+*/
+
+"Value is required" = "Value cannot be empty";
+"Value must meet criteria" = "Minimum %i characters required";

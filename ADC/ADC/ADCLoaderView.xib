@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ADCLoaderView" customModule="ADC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pik-rX-dut">
+                    <rect key="frame" x="169.5" y="266.5" width="37" height="37"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZZ-B4-wA6">
+                    <rect key="frame" x="20" y="313.5" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="qi3-Cr-bmL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.98936170212765961" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aZZ-B4-wA6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6nz-cA-adh"/>
+                <constraint firstItem="aZZ-B4-wA6" firstAttribute="top" secondItem="pik-rX-dut" secondAttribute="bottom" constant="10" id="RFH-Oy-PbJ"/>
+                <constraint firstItem="pik-rX-dut" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="d6s-nW-N4P"/>
+                <constraint firstItem="aZZ-B4-wA6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="dRD-N4-WvP"/>
+                <constraint firstAttribute="trailing" secondItem="aZZ-B4-wA6" secondAttribute="trailing" constant="20" id="uQg-7h-x3b"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicator" destination="pik-rX-dut" id="Y8P-aB-azE"/>
+                <outlet property="message" destination="aZZ-B4-wA6" id="jsN-Ye-AW2"/>
+            </connections>
+        </view>
+    </objects>
+</document>
